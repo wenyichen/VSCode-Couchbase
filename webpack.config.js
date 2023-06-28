@@ -39,7 +39,6 @@ const config = {
   // @ts-ignore
   devServer:{
     host: 'localhost:3001',
-    public: 'localhost:3001',
     allowedHosts: 'all',
     headers: {
       'Access-Control-Allow-Origin': '*',
@@ -95,7 +94,6 @@ const config = {
       remotes: {
         remote: "remote@http://localhost:3001/remoteEntry.js"
       },
-      exposes: {},
       shared: {
         react: {
           singleton: true,
