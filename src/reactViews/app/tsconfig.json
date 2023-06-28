@@ -1,25 +1,20 @@
 {
-    "compilerOptions": {
-        "module": "esnext",
-        "moduleResolution": "node",
-        "target": "es6",
-        "outDir": "dist",
-        "lib": [
-            "es6",
-            "dom"
-        ],
-        "jsx": "react",
-        "sourceMap": true,
-        "rootDir": "..",
-        "noUnusedLocals": true,
-        "noImplicitReturns": true,
-        "noFallthroughCasesInSwitch": true,
-        "experimentalDecorators": true,
-        "esModuleInterop": true,
-        "allowSyntheticDefaultImports": true,
-
-    },
-    "exclude": [
-        "node_modules"
-    ]
+  "compilerOptions": {
+    "module": "esnext",
+    "moduleResolution": "node",
+    "target": "es6",
+    "outDir": "dist",
+    "lib": ["es6", "DOM", "DOM.Iterable"],
+    "typeRoots": ["./types"],
+    "jsx": "react",
+    "sourceMap": true,
+    "rootDir": "..",
+    "noUnusedLocals": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    "experimentalDecorators": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true
+  },
+  "exclude": ["node_modules"]
 }

@@ -27,7 +27,7 @@
     "rebuild": "node scripts/fix_openssl.js && cmake-js rebuild -d node_modules/couchbase -r electron -v 19.1.8 && node scripts/copy_binding.js",
     "rebuild:xcompile": "node scripts/fix_openssl.js && cmake-js rebuild -d node_modules/couchbase -r electron -t ${TARGET} -v 19.1.8  -CDCMAKE_CXX_COMPILER=/usr/bin/g++ -CDCMAKE_C_COMPILER=/usr/bin/gcc && node scripts/copy_binding.js",
     "rebuild:cmake": "cmake-js rebuild -d node_modules/couchbase -r electron -v 19.1.8",
-    "compile": "npm-run-all compile:* && node scripts/fixReactBuild.js",
+    "compile": "npm-run-all compile:*",
     "watch": "npm-run-all -p watch:*",
     "compile:extension": "tsc -p ./",
     "compile:views": "webpack --mode development",
@@ -73,8 +73,7 @@
     "keytar": "^7.7.0",
     "node-addon-api": "^6.0.0",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "webpack-dev-server": "^4.15.1"
+    "react-dom": "^18.2.0"
   },
   "activationEvents": [
     "onFileSystem:couchbase",
